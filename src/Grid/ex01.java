@@ -11,7 +11,6 @@ public class ex01 {
             cnt += n / coin;
             n %= coin;
         }
-
         System.out.println(cnt);
     }
 }
