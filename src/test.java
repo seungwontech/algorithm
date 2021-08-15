@@ -5,5 +5,9 @@ public class test {
 
         int sum = i + j;
         System.out.println(sum);
+
+        if(sum ==10){
+            System.out.println("10입니다.");
+        }
     }
 }
