@@ -1,7 +1,7 @@
 package Sort;
 
 public class bubble_sort {
-    public static void main(String[] ages) {
+    public static void main(String[] args) {
         int i, j, temp;
         int[] array = {1, 10, 3, 4, 7, 5, 6};
 
