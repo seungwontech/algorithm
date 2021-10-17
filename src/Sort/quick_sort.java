@@ -1,6 +1,6 @@
 package Sort;
+// 퀵 정렬 : 특정한 값을 기준으로 큰 숫자와 작은 숫자를 서로 교환한 뒤에 배열을 반으로 나눕니다.
 
-// 퀵정렬 : 특정한 값을 기준으로 큰 숫자와 작은 숫자를 서로 교환한 뒤에 배열을 반으로 나눕니다.
 public class quick_sort {
     private static void qickSort(int[] data, int start, int end) {
         if (start >= end) {
@@ -29,6 +29,7 @@ public class quick_sort {
                 data[j] = temp;
             }
         }
+
         qickSort(data, start, j - 1);
         qickSort(data, j + 1, end);
     }
