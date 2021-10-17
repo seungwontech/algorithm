@@ -6,10 +6,12 @@ public class quick_sort {
         if (start >= end) {
             return;
         }
+
         int key = start;
         int i = start + 1;
         int j = end;
         int temp = 0;
+
         while (i <= j) {
             while (i <= end && data[i] <= data[key]) {
                 i++;
