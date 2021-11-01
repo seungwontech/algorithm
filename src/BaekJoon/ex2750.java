@@ -5,7 +5,7 @@ import java.util.Scanner;
 // 단계별로 풀어보기 - 정렬
 // 문제 번호 2750 - 수 정렬하기
 public class ex2750 {
-    public static void main(String[] age) {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
         int n = scan.nextInt();
