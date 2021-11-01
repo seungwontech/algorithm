@@ -1,7 +1,7 @@
 package Grid;
 
 public class ex02 {
-    public static void main(String[] age) {
+    public static void main(String[] args) {
         int n = 25;
         int k = 3;
         int result = 0;
