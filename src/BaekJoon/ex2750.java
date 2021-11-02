@@ -3,7 +3,7 @@ package BaekJoon;
 import java.util.Scanner;
 
 // 단계별로 풀어보기 - 정렬
-// 문제 번호 2750 - 수 정렬하기
+// 백준 2750번 문제 - 수 정렬하기
 public class ex2750 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
