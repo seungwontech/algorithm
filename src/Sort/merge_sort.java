@@ -48,6 +48,7 @@ public class merge_sort {
         for (int i = 0; i < n; i++) {
             System.out.print(a[i] + " ");
         }
+        // 결과 1 2 3 4 5 7 8 9 11 20 35
 
     }
 }
