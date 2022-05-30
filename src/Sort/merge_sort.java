@@ -13,8 +13,11 @@ public class merge_sort {
             int j = 0;
             int k = left;
 
-            __mergeSort(a, left, center);            // 앞부분을 병합 정렬
-            __mergeSort(a, center + 1, right);  // 뒷부분을 병합 정렬
+            // 앞부분을 병합 정렬
+            __mergeSort(a, left, center);
+            // 뒷부분을 병합 정렬
+            __mergeSort(a, center + 1, right);
+            
             for (i = left; i <= center; i++) {
                 buff[p++] = a[i];
             }
