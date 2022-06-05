@@ -37,11 +37,13 @@ public class heap_sort {
 
     public static void main(String[] args) {
         int[] a = {1, 4, 5, 7, 9, 8, 35, 2, 3, 11, 20};
+        int len = a.length;
 
-        heapSort(a, a.length);
+        heapSort(a, len);
 
-        for (int i = 0; i < a.length; i++) {
+        for (int i = 0; i < len; i++) {
             System.out.print(a[i] + " ");
         }
+        // 결과 1 2 3 4 5 7 8 9 11 20 35
     }
 }
