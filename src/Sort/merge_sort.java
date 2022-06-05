@@ -41,14 +41,13 @@ public class merge_sort {
 
     public static void main(String[] age) {
         int[] a = {1, 4, 5, 7, 9, 8, 35, 2, 3, 11, 20};
-        int n = 11;
+        int len = a.length;
 
-        mergeSort(a, n);
+        mergeSort(a, len);
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < len; i++) {
             System.out.print(a[i] + " ");
         }
         // 결과 1 2 3 4 5 7 8 9 11 20 35
-
     }
 }
