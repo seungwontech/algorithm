@@ -20,6 +20,6 @@ public class stack {
 
         stack.clear();                         // 초기화
         System.out.println(stack);
-        System.out.println(stack.isEmpty());   // 비어있는지 비어있으면 true
+        System.out.println(stack.isEmpty());   // 비어있는지 판단 비어있으면 true
     }
 }
