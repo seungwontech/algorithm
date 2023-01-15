@@ -12,7 +12,7 @@ public class test_callbyvalue {
 
         System.out.println(info);
         // 결과: {국적=일본, 이름=짱구}
-
+        System.out.println(System.identityHashCode(info));
         addInfo(info);
         System.out.println(info);
         // 결과: {국적=일본, 이름=신짱구, 나이=7살}
@@ -20,6 +20,16 @@ public class test_callbyvalue {
         removeInfo(info);
         System.out.println(info);
         // 결과: {이름=신짱구, 나이=7살}
+
+        int a = 1;
+        int b = 2;
+        System.out.println("변경전");
+        System.out.println(a);
+        System.out.println(b);
+        swap(a, b);
+        System.out.println("변경후");
+        System.out.println(a);
+        System.out.println(b);
     }
 
     /**
@@ -27,7 +37,9 @@ public class test_callbyvalue {
      * @param info
      */
     public static void addInfo(Map<String, Object> info) {
+        System.out.println(System.identityHashCode(info));
         Map<String, Object> rtnMap = info;
+        System.out.println(System.identityHashCode(rtnMap));
         rtnMap.put("나이", "7살");
         rtnMap.put("이름", "신짱구");
     }
@@ -39,5 +51,15 @@ public class test_callbyvalue {
     public static void removeInfo(Map<String, Object> info) {
         Map<String, Object> rtnMap = info;
         rtnMap.remove("국적");
+    }
+
+    /**
+     * 교환
+     * @param a
+     * @param b
+     */
+    public static void swap(int a, int b) {
+        a = 100;
+        b = 200;
     }
 }
