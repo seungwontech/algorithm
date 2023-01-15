@@ -11,11 +11,11 @@ public class test_callbyvalue {
         info.put("국적", "일본");
 
         System.out.println(info);
-        // {국적=일본, 이름=짱구}
+        // 결과: {국적=일본, 이름=짱구}
 
         addInfo(info);
         System.out.println(info);
-        // {국적=일본, 이름=신짱구, 나이=7살}
+        // 결과: {국적=일본, 이름=신짱구, 나이=7살}
 
         removeInfo(info);
         System.out.println(info);
