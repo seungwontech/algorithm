@@ -24,12 +24,12 @@ public class test_callbyvalue {
         int a = 1;
         int b = 2;
         System.out.println("변경전");
-        System.out.println(a);
-        System.out.println(b);
+        System.out.println(a); // 결과: 1
+        System.out.println(b); // 결과: 2
         swap(a, b);
         System.out.println("변경후");
-        System.out.println(a);
-        System.out.println(b);
+        System.out.println(a); // 결과: 1
+        System.out.println(b); // 결과: 2
     }
 
     /**
