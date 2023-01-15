@@ -3,7 +3,7 @@ package Test;
 import java.util.HashMap;
 import java.util.Map;
 
-public class test_callbyreference {
+public class test_callbyvalue {
     public static void main(String[] args) {
 
         Map<String, Object> info = new HashMap<String, Object>();
