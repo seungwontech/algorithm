@@ -4,7 +4,18 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class test_callbyvalue {
+    public static class Test{
+        String value = "전";
+    }
+    public static void chgValue(Test t){
+        t.value = "후";
+    }
     public static void main(String[] args) {
+        Test t = new Test();
+        System.out.println(t.value);
+        chgValue(t);
+        System.out.println(t.value);
+
 
         Map<String, Object> info = new HashMap<String, Object>();
         info.put("이름", "짱구");
