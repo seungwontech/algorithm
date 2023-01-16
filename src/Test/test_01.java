@@ -8,7 +8,10 @@ public class test_01 {
     public static void main(String[] args) {
 
         String a = "";
-        System.out.println(a.isEmpty());
+        String b = null;
+
+        System.out.println(a.isEmpty()); // 결과: true
+        System.out.println(b.isEmpty()); // 결과: java.lang.NullPointerException
 
         List<Map<String, Object>> list1 = new ArrayList<Map<String, Object>>();
 
