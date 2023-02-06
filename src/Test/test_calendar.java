@@ -9,9 +9,11 @@ public class test_calendar {
     public static void main(String[] args) {
         SimpleDateFormat dtFormat = new SimpleDateFormat("yyyyMMdd");
 
-        String a = "20200229";
+        String a = "20200309";
         Calendar cal = Calendar.getInstance();
-
+        if (Integer.parseInt(a) <= 20200229) {
+            System.out.println("a");
+        }
         try {
             Date dt = dtFormat.parse(a);
             cal.setTime(dt);
