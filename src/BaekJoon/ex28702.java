@@ -7,24 +7,16 @@ import java.io.InputStreamReader;
 public class ex28702 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String a = br.readLine();
-        String b = br.readLine();
-        String c = br.readLine();
-        String answer = "";
-        String[] temp = new String[3];
-        temp[0] = a;
-        temp[1] = b;
-        temp[2] = c;
         int val = 0;
-        int index = 0;
-        for (int i = 0; i < temp.length; i++) {
-            if (!temp[i].equals("FizzBuzz") && !temp[i].equals("Fizz") && !temp[i].equals("Buzz")) {
-                index = 3 - i;
-                val = Integer.parseInt(temp[i]) + index;
+        String answer = "";
+        for (int i = 0; i < 3; i++) {
+            String str = br.readLine();
+            if (Character.isDigit(str.charAt(0))) {
+                val = Integer.parseInt(str) + 3 - i;
                 break;
             }
         }
-        if (val % 3 == 0 && val % 5 == 0) {
+        if (val % 15 == 0) {
             answer = "FizzBuzz";
         } else if (val % 3 == 0) {
             answer = "Fizz";
