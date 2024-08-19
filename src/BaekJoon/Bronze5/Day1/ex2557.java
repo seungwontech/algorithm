@@ -1,4 +1,4 @@
-package BaekJoon.Day1;
+package BaekJoon.Bronze5.Day1;
 
 public class ex2557 {
     public static void main(String[] args) {

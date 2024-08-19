@@ -1,12 +1,12 @@
-package BaekJoon.Day1;
+package BaekJoon.Bronze5.Day2;
 
 import java.util.Scanner;
 
-public class ex1000 {
+public class ex1008 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int A = sc.nextInt();
+        double A = sc.nextInt();
         int B = sc.nextInt();
-        System.out.println(A+B);
+        System.out.println(A/B);
     }
 }

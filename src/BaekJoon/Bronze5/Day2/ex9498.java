@@ -1,4 +1,4 @@
-package BaekJoon.Day2;
+package BaekJoon.Bronze5.Day2;
 
 import java.util.Scanner;
 
